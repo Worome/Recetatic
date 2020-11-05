@@ -19,9 +19,7 @@ namespace Recetatic
 
         private void frmPeriodos_Load(object sender, EventArgs e)
         {
-            double i;
-            i = Math.Round(3.6);
-            MessageBox.Show(i.ToString());
+       
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
