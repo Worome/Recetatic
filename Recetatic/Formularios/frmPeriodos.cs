@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Recetatic.Clases;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,8 @@ namespace Recetatic
 
         private void frmPeriodos_Load(object sender, EventArgs e)
         {
-       
+            clPeriodos p1 = new clPeriodos();
+            p1.
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
