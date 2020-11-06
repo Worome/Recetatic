@@ -77,6 +77,7 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="REcetario.xlsx" />
+    <None Include="Visual C#.pptx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
