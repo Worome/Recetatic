@@ -28,7 +28,8 @@ namespace Recetatic
             
             try
             {
-                mostrarDatos(consulta);
+                dgvPeriodos.DataSource = BasesDeDatos.mostrarPeriodos(consulta);
+               
                 txtCodigo.Focus();
             }
             catch (Exception ex)
@@ -47,34 +48,29 @@ namespace Recetatic
 
         private void btnAplicar_Click(object sender, EventArgs e)
         {
-           string cadenaInsertar = "INSERT INTO Perioricidad (Codigo, Descripcion) values ('" + txtCodigo.Text +
-                "','" + txtPeriodo.Text + "')";
-            try
+            if (txtCodigo.Text.Length == 0)
             {
-                SqlCommand comandoInsercion = new SqlCommand(cadenaInsertar, BasesDeDatos.con);
-                comandoInsercion.ExecuteNonQuery();
-                txtCodigo.Text = "";
-                txtPeriodo.Text = "";
-                BasesDeDatos.Desconexion();
-                mostrarDatos(consulta);
+                MessageBox.Show("El código debe estar relleno");
                 txtCodigo.Focus();
-            }
-            catch (Exception ex)
+            } else
             {
-                MessageBox.Show("Se ha producido el siguiente error: " + ex.Message);
+    
+                try
+                {
+                    BasesDeDatos.insertarPeriodo(txtCodigo.Text, txtPeriodo.Text);
+
+                    txtCodigo.Text = "";
+                    txtPeriodo.Text = "";
+                    BasesDeDatos.Desconexion();
+                    dgvPeriodos.DataSource = BasesDeDatos.mostrarPeriodos(consulta);
+                    
+                    txtCodigo.Focus();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Se ha producido el siguiente error: " + ex.Message);
+                }
             }
         }
-
-        private void mostrarDatos(string consulta)
-        {
-            BasesDeDatos.Conexion();
-            SqlCommand comandoConsultaPeriodos = new SqlCommand(consulta, BasesDeDatos.con);
-            SqlDataAdapter adaptadorPeriodos = new SqlDataAdapter(comandoConsultaPeriodos);
-            DataTable datosPeriodos = new DataTable();
-            adaptadorPeriodos.Fill(datosPeriodos);
-
-            dgvPeriodos.DataSource = datosPeriodos;
-        }
-
     }
 }

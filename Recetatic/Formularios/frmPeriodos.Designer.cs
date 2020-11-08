@@ -85,7 +85,7 @@
             this.label2.Size = new System.Drawing.Size(50, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Periodo";
-                        // 
+            // 
             // txtCodigo
             // 
             this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
