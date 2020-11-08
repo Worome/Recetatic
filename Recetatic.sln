@@ -5,11 +5,6 @@ VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recetatic", "Recetatic\Recetatic.csproj", "{84A7ED7E-A02F-4B34-8CDC-7D8BFF4C7BFA}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Otros Archivos", "Otros Archivos", "{4B3B5A1D-2BA4-4B10-B680-62F211705470}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\Javier\PowerPoint\particular\Visual C#.pptx = ..\..\..\..\..\Javier\PowerPoint\particular\Visual C#.pptx
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
