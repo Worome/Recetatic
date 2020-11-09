@@ -36,15 +36,17 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtPeriodo = new System.Windows.Forms.TextBox();
             this.dgvPeriodos = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeriodos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAplicar
             // 
-            this.btnAplicar.Location = new System.Drawing.Point(411, 310);
-            this.btnAplicar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAplicar.Location = new System.Drawing.Point(706, 364);
+            this.btnAplicar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnAplicar.Name = "btnAplicar";
-            this.btnAplicar.Size = new System.Drawing.Size(66, 25);
+            this.btnAplicar.Size = new System.Drawing.Size(88, 31);
             this.btnAplicar.TabIndex = 4;
             this.btnAplicar.Text = "&Aplicar";
             this.btnAplicar.UseVisualStyleBackColor = true;
@@ -53,10 +55,10 @@
             // btnCancelar
             // 
             this.btnCancelar.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancelar.Location = new System.Drawing.Point(498, 310);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnCancelar.Location = new System.Drawing.Point(822, 364);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(66, 25);
+            this.btnCancelar.Size = new System.Drawing.Size(88, 31);
             this.btnCancelar.TabIndex = 5;
             this.btnCancelar.Text = "&Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -67,10 +69,9 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Honeydew;
-            this.label1.Location = new System.Drawing.Point(334, 59);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(603, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 13);
+            this.label1.Size = new System.Drawing.Size(58, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código";
             // 
@@ -79,30 +80,29 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Honeydew;
-            this.label2.Location = new System.Drawing.Point(334, 99);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(603, 104);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 13);
+            this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Periodo";
             // 
             // txtCodigo
             // 
             this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtCodigo.Location = new System.Drawing.Point(411, 59);
-            this.txtCodigo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCodigo.Location = new System.Drawing.Point(706, 55);
+            this.txtCodigo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCodigo.MaxLength = 3;
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(60, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(79, 22);
             this.txtCodigo.TabIndex = 1;
             // 
             // txtPeriodo
             // 
             this.txtPeriodo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtPeriodo.Location = new System.Drawing.Point(411, 99);
-            this.txtPeriodo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtPeriodo.Location = new System.Drawing.Point(706, 104);
+            this.txtPeriodo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPeriodo.Name = "txtPeriodo";
-            this.txtPeriodo.Size = new System.Drawing.Size(146, 20);
+            this.txtPeriodo.Size = new System.Drawing.Size(193, 22);
             this.txtPeriodo.TabIndex = 3;
             // 
             // dgvPeriodos
@@ -114,21 +114,34 @@
             this.dgvPeriodos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgvPeriodos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SunkenHorizontal;
             this.dgvPeriodos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPeriodos.Location = new System.Drawing.Point(13, 25);
+            this.dgvPeriodos.Location = new System.Drawing.Point(175, 13);
+            this.dgvPeriodos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvPeriodos.Name = "dgvPeriodos";
             this.dgvPeriodos.ReadOnly = true;
-            this.dgvPeriodos.Size = new System.Drawing.Size(290, 318);
+            this.dgvPeriodos.RowHeadersWidth = 51;
+            this.dgvPeriodos.Size = new System.Drawing.Size(387, 391);
             this.dgvPeriodos.TabIndex = 6;
             this.dgvPeriodos.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 13);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(126, 130);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // frmPeriodos
             // 
             this.AcceptButton = this.btnAplicar;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkSlateGray;
             this.CancelButton = this.btnCancelar;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(930, 426);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dgvPeriodos);
             this.Controls.Add(this.txtPeriodo);
             this.Controls.Add(this.txtCodigo);
@@ -137,13 +150,14 @@
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAplicar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmPeriodos";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Perioricidades";
             this.Load += new System.EventHandler(this.frmPeriodos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPeriodos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,6 +172,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtPeriodo;
         private System.Windows.Forms.DataGridView dgvPeriodos;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

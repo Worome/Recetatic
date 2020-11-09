@@ -51,10 +51,11 @@ namespace Recetatic
             if (txtCodigo.Text.Length == 0)
             {
                 MessageBox.Show("El código debe estar relleno");
-                txtCodigo.Focus();
-            } else
+                //txtCodigo.Focus();
+            }
+            else
             {
-    
+
                 try
                 {
                     BasesDeDatos.insertarPeriodo(txtCodigo.Text, txtPeriodo.Text);
