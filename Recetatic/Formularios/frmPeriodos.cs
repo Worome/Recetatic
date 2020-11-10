@@ -51,7 +51,7 @@ namespace Recetatic
             if (txtCodigo.Text.Length == 0)
             {
                 MessageBox.Show("El código debe estar relleno");
-                //txtCodigo.Focus();
+                txtCodigo.Focus();
             }
             else
             {
@@ -61,7 +61,6 @@ namespace Recetatic
                     clPeriodos periodo = new clPeriodos();
                     periodo.Codigo = txtCodigo.Text;
                     periodo.Periodo = txtPeriodo.Text;
-                    //BasesDeDatos.insertarPeriodo(txtCodigo.Text, txtPeriodo.Text);
                     BasesDeDatos.insertarPeriodo(periodo);
 
                     txtCodigo.Text = "";

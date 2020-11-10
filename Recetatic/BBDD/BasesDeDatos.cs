@@ -41,16 +41,6 @@ namespace Recetatic.Clases
             }
         }
 
-        //public DataTable insertarPeriodo(string codigo, string periodo)
-        //{
-        //    string cadenaInsertar = "INSERT INTO Perioricidad (Codigo, Descripcion) values ('" + codigo +
-        //        "','" + periodo + "')";
-        //    SqlCommand comandoInsercion = new SqlCommand(cadenaInsertar, BasesDeDatos.con);
-        //    comandoInsercion.ExecuteNonQuery();
-        //    return null;
-        //}
-
-
         public static DataTable mostrarPeriodos(string consulta)
         {
             try
