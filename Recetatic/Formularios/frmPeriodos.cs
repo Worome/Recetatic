@@ -58,7 +58,11 @@ namespace Recetatic
 
                 try
                 {
-                    BasesDeDatos.insertarPeriodo(txtCodigo.Text, txtPeriodo.Text);
+                    clPeriodos periodo = new clPeriodos();
+                    periodo.Codigo = txtCodigo.Text;
+                    periodo.Periodo = txtPeriodo.Text;
+                    //BasesDeDatos.insertarPeriodo(txtCodigo.Text, txtPeriodo.Text);
+                    BasesDeDatos.insertarPeriodo(periodo);
 
                     txtCodigo.Text = "";
                     txtPeriodo.Text = "";

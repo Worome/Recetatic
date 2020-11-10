@@ -61,8 +61,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clases\BasesDeDatos.cs" />
-    <Compile Include="Clases\clPeriodos.cs" />
+    <Compile Include="BBDD\BasesDeDatos.cs" />
+    <Compile Include="Entidades\clPeriodos.cs" />
     <Compile Include="Formularios\frmPeriodos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +109,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Recetas.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Recetas_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Recetas.mdf</DependentUpon>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
