@@ -74,23 +74,7 @@ namespace Recetatic.Clases
 
         }
 
-        //        public static void insertarPeriodo(string codigo, string periodo)
-        //        {
-        //            string cadenaInsertar = "INSERT INTO Perioricidad (Codigo, Descripcion) values ('" + codigo +
-        //"','" + periodo + "')";
-        //            try
-        //            {
-        //                SqlCommand comandoInsercion = new SqlCommand(cadenaInsertar, con);
-        //                comandoInsercion.ExecuteNonQuery();
-        //            }
-        //            catch (Exception ex)
-        //            {
-
-        //                System.Windows.Forms.MessageBox.Show("Ha ocurrido el siguiente error: " + ex.Message);
-
-        //            }
-        //        }
-        public static void insertarPeriodo(clPeriodos periodoRecibido)
+         public static void insertarPeriodo(clPeriodos periodoRecibido)
         {
             string cadenaInsertar = "INSERT INTO Perioricidad (Codigo, Descripcion) values ('" + 
                 periodoRecibido.Codigo + "','" + periodoRecibido.Periodo + "')";
