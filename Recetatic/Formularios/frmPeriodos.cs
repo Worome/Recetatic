@@ -43,7 +43,7 @@ namespace Recetatic
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             BasesDeDatos.Desconexion();
-            Close();
+            this.Close();
         }
 
         private void btnAplicar_Click(object sender, EventArgs e)

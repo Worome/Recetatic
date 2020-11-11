@@ -10,8 +10,8 @@ namespace Recetatic.Clases
 {
     public class BasesDeDatos
     {
-        //static string cadenacon = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Script\\source\\repos\\Recetatic\\Recetas.mdf;Integrated Security=True;Connect Timeout=30";
-        static string cadenacon = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Worome\\source\\repos\\Recetatic\\Recetatic\\Recetas.mdf;Integrated Security=True;Connect Timeout=30";
+        static string cadenacon = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Script\\source\\repos\\Recetatic\\Recetatic\\Recetas.mdf;Integrated Security=True;Connect Timeout=30";
+        //static string cadenacon = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Worome\\source\\repos\\Recetatic\\Recetatic\\Recetas.mdf;Integrated Security=True;Connect Timeout=30";
         public static SqlConnection con = new SqlConnection(cadenacon);
 
         public static void Conexion()
